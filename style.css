@@ -1,0 +1,9 @@
+body { font-family: sans-serif; background: #f0f2f5; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 20px; }
+.stat-card { background: #e7f3ff; padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; }
+table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { cursor: pointer; background: #f8f9fa; }
+.controls, .algo-controls { display: flex; gap: 10px; margin-bottom: 20px; }
+#benchmarkResults { background: #222; color: #0f0; padding: 15px; border-radius: 5px; font-family: monospace; line-height: 1.6; }

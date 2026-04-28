@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Arrays - Students & Algorithms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Система управління студентами</h1>
+        
+        <div id="stats" class="stats-grid"></div>
+
+        <div class="controls">
+            <input type="text" id="nameFilter" placeholder="Пошук за ім'ям...">
+            <select id="facultyFilter">
+                <option value="">Всі факультети</option>
+                <option value="IT">IT</option>
+                <option value="Design">Design</option>
+                <option value="Economics">Economics</option>
+            </select>
+            <button onclick="renderStudents()">Фільтрувати</button>
+        </div>
+
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th onclick="setSort('name')">Ім'я ↕</th>
+                    <th onclick="setSort('age')">Вік ↕</th>
+                    <th onclick="setSort('gpa')">GPA ↕</th>
+                    <th>Факультет</th>
+                </tr>
+            </thead>
+            <tbody id="studentBody"></tbody>
+        </table>
+
+        <hr>
+
+        <h2>Порівняння алгоритмів сортування</h2>
+        <div class="algo-controls">
+            <button onclick="runBenchmark(100)">Тест 100 елементів</button>
+            <button onclick="runBenchmark(1000)">Тест 1000 елементів</button>
+            <button onclick="runBenchmark(5000)">Тест 5000 елементів</button>
+        </div>
+        <div id="benchmarkResults"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
